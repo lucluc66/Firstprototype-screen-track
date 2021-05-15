@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- For responsive page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Lucas Teo">
+        <meta name="keyword" content="ScreenTrack, Screen Track, screentrack">
+        <meta name="description" content="This is the first prototype for ScreenTrack">
+        <title>ScreenTrack</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" href="favicon.ico">
+        <!-- <script defer src="login-page.js"></script> -->
+    </head>
+    <body class="text-center">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <button class="btn" onclick="home()"><i class="fa fa-home"></i> Home</button>
+              </div>
+              <div class="col-sm">
+                <button class="dropbtn"><i class="fa fa-bars"></i> Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">About us</a>
+                    <a href="track.html">Track</a>
+                    <a href="tips.html">Tips</a>
+                </div>
+              </div>
+              <div class="col-sm">
+                <button class="btn" onclick="contact()"><i class="fa fa-address-book"></i> Contact us</button>
+              </div>
+            </div>
+        </div>
+        <main class="form-signin">
+            <h1>About us</h1>
+            <h3>This is the beta version (we are still developing this application, stay tuned.)</h3>
+            <p>This application would monitor screen time and keep track of the sites or applications used by the user. Furthermore, the application will send
+                an alert to the user when their screen time exceeds a certain threshold that the user could set depending on the importance of the task. The 
+                application would also send useful tips to user that could reduce or relive eye strain. The application can also analyse the screen time of the user 
+                and give recommendation on time spend on different sites to improve productivity and eye health.</p>
+            <p class="mt-5 mb-3">© 2021</p>
+            <script>
+
+                function home(){
+                    location.href = 'index.html';
+                }
+
+                function contact(){
+                    location.href = "contact.html";
+                }
+
+            </script>
+        </main>
+    </body>
+    
+</html>
